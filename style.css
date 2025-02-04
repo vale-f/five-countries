@@ -6,3 +6,29 @@ html, body {
 canvas {
   display: block;
 }
+
+#dropdown-container {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 47px;
+  white-space: nowrap;
+}
+
+.indie-flower-regular {
+  font-family: "Indie Flower", serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-style: normal;
+}
+
+select {
+  font-family: "Indie Flower", serif;
+  font-weight: 650;
+  letter-spacing: 1px;
+  font-size: 25px;
+  padding: 5px;
+  font-style: normal;
+}

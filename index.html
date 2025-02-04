@@ -4,7 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sketch</title>
+    <title>The five countries...</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -13,6 +17,26 @@
   </head>
 
   <body>
+    <div id="dropdown-container" class="indie-flower-regular">
+      <p>The five most <select id="country-select">
+        <option value="" disabled selected>Select</option>
+        <option value="0">populated (in absolute terms)</option>
+        <option value="1">deserted (in absolute terms)</option>
+        <option value="2">populated (per square mile)</option>
+        <option value="3">deserted (per square mile)</option>
+        <option value="4">rich (based on total wealth)</option>
+        <option value="5">poor (based on total wealth)</option>
+        <option value="6">rich (based on GDP per capita)</option>
+        <option value="7">poor (based on GDP per capita)</option>
+        <option value="8">equal (based on Gini index)</option>
+        <option value="9">unequal (based on Gini index)</option>
+        <option value="10">linguistically diverse</option>
+        <option value="11">polluted (based on PM2.5)</option>
+        <option value="12">unpolluted (based on PM2.5)</option>
+        <option value="13">educated (by tertiary education)</option>
+        <option value="14">uneducated (by tertiary education)</option>
+      </select> countries</p>
+    </div>
     <script src="sketch.js"></script>
   </body>
 </html>
