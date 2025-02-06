@@ -26,47 +26,47 @@ function selectCountries() {
   switch (selectedOption) {
     case 0:
       pinCoordinates = [
-        {x: 100, y: 150},
-        {x: 200, y: 250},
-        {x: 300, y: 350},
-        {x: 400, y: 450},
-        {x: 500, y: 550}
+        {x: 1270, y: 435},
+        {x: 1360, y: 370},
+        {x: 500, y: 352},
+        {x: 1420, y: 572},
+        {x: 1224, y: 392}
       ];
       break;
     case 1:
       pinCoordinates = [
-        {x: 100, y: 150},
-        {x: 200, y: 250},
-        {x: 300, y: 350},
-        {x: 400, y: 450},
-        {x: 500, y: 550}
+        {x: 978, y: 323},
+        {x: 1637, y: 540},
+        {x: 1677, y: 571},
+        {x: 1528, y: 499},
+        {x: 981, y: 312}
       ];
       break;
     case 2:
       pinCoordinates = [
-        {x: 100, y: 150},
-        {x: 200, y: 250},
-        {x: 300, y: 350},
-        {x: 400, y: 450},
-        {x: 500, y: 550}
+        {x: 1422, y: 421},
+        {x: 953, y: 315},
+        {x: 1390, y: 528},
+        {x: 1428, y: 418},
+        {x: 903, y: 349}
       ];
       break;
     case 3:
       pinCoordinates = [
-        {x: 100, y: 150},
-        {x: 200, y: 250},
-        {x: 300, y: 350},
-        {x: 400, y: 450},
-        {x: 500, y: 550}
+        {x: 805, y: 198},
+        {x: 700, y: 797},
+        {x: 863, y: 410},
+        {x: 1335, y: 300},
+        {x: 995, y: 650}
       ];
       break;
     case 4:
       pinCoordinates = [
-        {x: 100, y: 150},
-        {x: 200, y: 250},
-        {x: 300, y: 350},
-        {x: 400, y: 450},
-        {x: 500, y: 550}
+        {x: 500, y: 352},
+        {x: 1360, y: 370},
+        {x: 1505, y: 355},
+        {x: 970, y: 285},
+        {x: 922, y: 272}
       ];
       break;
     case 5:
@@ -80,20 +80,20 @@ function selectCountries() {
       break;
     case 6:
       pinCoordinates = [
-        {x: 100, y: 150},
-        {x: 200, y: 250},
-        {x: 300, y: 350},
-        {x: 400, y: 450},
-        {x: 500, y: 550}
+        {x: 950, y: 283},
+        {x: 1390, y: 528},
+        {x: 1422, y: 421},
+        {x: 898, y: 268},
+        {x: 1167, y: 408}
       ];
       break;
     case 7:
       pinCoordinates = [
-        {x: 100, y: 150},
-        {x: 200, y: 250},
-        {x: 300, y: 350},
-        {x: 400, y: 450},
-        {x: 500, y: 550}
+        {x: 1053, y: 556},
+        {x: 1053, y: 506},
+        {x: 1016, y: 502},
+        {x: 1125, y: 520},
+        {x: 1023, y: 556}
       ];
       break;
     case 8:
@@ -192,4 +192,9 @@ function draw() {
     let pin = pinCoordinates[i];
     image(img2, pin.x, pin.y, 14.3, 30);
   }
+}
+
+// This is just a helper function
+function mousePressed() {
+  console.log(`{x: ${mouseX}, y: ${mouseY}},`);
 }
