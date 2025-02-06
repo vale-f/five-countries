@@ -99,7 +99,7 @@ function selectCountries() {
     case 8:
       pinCoordinates = [
         {x: 995, y: 288},
-        {x: 988, y: 303},
+        {x: 986, y: 303},
         {x: 1032, y: 265},
         {x: 1040, y: 275},
         {x: 1040, y: 299}
@@ -139,24 +139,6 @@ function selectCountries() {
         {x: 1625, y: 507},
         {x: 805, y: 198},
         {x: 335, y: 659}
-      ];
-      break;
-    case 13:
-      pinCoordinates = [
-        {x: 100, y: 150},
-        {x: 200, y: 250},
-        {x: 300, y: 350},
-        {x: 400, y: 450},
-        {x: 500, y: 550}
-      ];
-      break;
-    case 14:
-      pinCoordinates = [
-        {x: 100, y: 150},
-        {x: 200, y: 250},
-        {x: 300, y: 350},
-        {x: 400, y: 450},
-        {x: 500, y: 550}
       ];
       break;
     // Add more cases for other options
