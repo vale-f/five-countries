@@ -1,6 +1,8 @@
 let img1, img2;
 let pinCoordinates = [];
 let source;
+let link;
+let hyperlink;
 let dropdown;
 let selectedOption;
 
@@ -15,6 +17,11 @@ function setup() {
 
   dropdown = select('#country-select');
   dropdown.changed(handleDropdownChange);
+
+    // Create hyperlink only once
+    hyperlink = createA("", "", "_blank");
+    hyperlink.style("font-size", "14px");
+    hyperlink.style("color", "blue");
 }
 
 
@@ -36,7 +43,7 @@ function selectCountries() {
         {x: 1224, y: 392}
       ];
       link = "https://data.worldbank.org/indicator/SP.POP.TOTL?most_recent_value_desc=true";
-      source = "Source: World Bank. " + link;
+      source = "Source: World Bank. ";
       break;
     case 1:
       pinCoordinates = [
@@ -47,7 +54,7 @@ function selectCountries() {
         {x: 640, y: 460}
       ];
       link = "https://worldpopulationreview.com/country-rankings/smallest-countries";
-      source = "Source: World Population Review. " + link;
+      source = "Source: World Population Review. ";
       break;
     case 2:
       pinCoordinates = [
@@ -58,7 +65,7 @@ function selectCountries() {
         {x: 903, y: 349}
       ];
       link = "https://ourworldindata.org/most-densely-populated-countries";
-      source = "Source: Our World in Data. " + link;
+      source = "Source: Our World in Data. ";
       break;
     case 3:
       pinCoordinates = [
@@ -69,7 +76,7 @@ function selectCountries() {
         {x: 995, y: 650}
       ];
       link = "https://www.globalcitizensolutions.com/countries-with-lowest-population-density/";
-      source = "Source: Global Citizen Solutions. " + link;
+      source = "Source: Global Citizen Solutions. ";
       break;
     case 4:
       pinCoordinates = [
@@ -80,7 +87,7 @@ function selectCountries() {
         {x: 922, y: 272}
       ];
       link = "https://en.wikipedia.org/wiki/List_of_countries_by_total_wealth#cite_note-databook2023-2";
-      source = "Source: Wikipedia. " + link;
+      source = "Source: Wikipedia. ";
       break;
     case 5:
       pinCoordinates = [
@@ -91,7 +98,7 @@ function selectCountries() {
         {x: 1108, y: 478}
       ];
       link = "https://en.wikipedia.org/wiki/List_of_countries_by_total_wealth#cite_note-databook2023-2";
-      source = "Source: Wikipedia. " + link;
+      source = "Source: Wikipedia. ";
       break;
     case 6:
       pinCoordinates = [
@@ -102,7 +109,7 @@ function selectCountries() {
         {x: 1174, y: 402}
       ];
       link = "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD?most_recent_value_desc=true";
-      source = "Source: World Bank. " + link;
+      source = "Source: World Bank. ";
       break;
     case 7:
       pinCoordinates = [
@@ -113,7 +120,7 @@ function selectCountries() {
         {x: 1023, y: 556}
       ];
       link = "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD?most_recent_value_desc=true";
-      source = "Source: World Bank. " + link;
+      source = "Source: World Bank. ";
       break;
     case 8:
       pinCoordinates = [
@@ -124,7 +131,7 @@ function selectCountries() {
         {x: 1040, y: 299}
       ];
       link = "https://data.worldbank.org/indicator/SI.POV.GINI?most_recent_value_desc=false";
-      source = "Source: World Bank. " + link;
+      source = "Source: World Bank. ";
       break;
     case 9:
       pinCoordinates = [
@@ -135,7 +142,7 @@ function selectCountries() {
         {x: 1024, y: 650}
       ];
       link = "https://data.worldbank.org/indicator/SI.POV.GINI?most_recent_value_desc=false";
-      source = "Source: World Bank. " + link;
+      source = "Source: World Bank. ";
       break;
     case 10:
       pinCoordinates = [
@@ -146,7 +153,7 @@ function selectCountries() {
         {x: 500, y: 352}
       ];
       link = "https://www.weforum.org/stories/2021/03/these-are-the-top-ten-countries-for-linguistic-diversity/";
-      source = "Source: We Forum. " + link;
+      source = "Source: We Forum. ";
       break;
     case 11:
       pinCoordinates = [
@@ -157,7 +164,7 @@ function selectCountries() {
         {x: 1224, y: 392}
       ];
       link = "https://en.wikipedia.org/wiki/List_of_countries_by_air_pollution";
-      source = "Source: Wikipedia (UChicago AQLI 2022). " + link;
+      source = "Source: Wikipedia (UChicago AQLI 2022). ";
       break;
     case 12:
       pinCoordinates = [
@@ -168,7 +175,7 @@ function selectCountries() {
         {x: 335, y: 659}
       ];
       link = "https://en.wikipedia.org/wiki/List_of_countries_by_air_pollution";
-      source = "Source: Wikipedia (UChicago AQLI 2022). " + link;
+      source = "Source: Wikipedia (UChicago AQLI 2022). ";
       break;
     // Add more cases for other options
     default:
@@ -211,10 +218,20 @@ function draw() {
   textAlign(CENTER);
   text(source, width / 2, height - 20);
 
-  // Set the source text dynamically
-  //let sourceText = source ? `<a href="${link}" target="_blank">${source}</a>` : "";
-  //document.getElementById("source-link").innerHTML = sourceText;
+  updateHyperlink();
 
+  function updateHyperlink() {
+    if (link) {
+      hyperlink.html(link);  // Display actual URL as text
+      hyperlink.attribute("href", link);
+      
+      // Position next to the source text
+      let textWidthVal = textWidth(source);
+      hyperlink.position(width / 2 + textWidthVal / 2 + 5, height - 35);
+    } else {
+      hyperlink.html("");  // Hide if no link available
+    }
+  }
 }
 
 // This is just a helper function
