@@ -215,22 +215,26 @@ function draw() {
 
   fill(0);
   textSize(14);
-  textAlign(CENTER);
-  text(source, width / 2, height - 20);
+  textAlign(LEFT, CENTER);
 
-  updateHyperlink();
+  let sourceWidth = textWidth(source);
+  let linkWidth = textWidth(link);
+  let totalWidth = sourceWidth + linkWidth + 10;
 
-  function updateHyperlink() {
-    if (link) {
-      hyperlink.html(link);  // Display actual URL as text
-      hyperlink.attribute("href", link);
-      
-      // Position next to the source text
-      let textWidthVal = textWidth(source);
-      hyperlink.position(width / 2 + textWidthVal / 2 + 5, height - 35);
-    } else {
-      hyperlink.html("");  // Hide if no link available
-    }
+  let startX = width / 2 - totalWidth / 2;
+
+  text(source, startX, height - 20);
+
+  updateHyperlink(startX + sourceWidth + 5);
+}
+
+function updateHyperlink(hyperlinkX) {
+  if (link) {
+    hyperlink.html(link);
+    hyperlink.attribute("href", link);
+    hyperlink.position(hyperlinkX, height - 30);
+  } else {
+    hyperlink.html("");
   }
 }
 
