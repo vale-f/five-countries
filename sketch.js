@@ -43,41 +43,41 @@ function selectCountries() {
         {x: 11480 / originalImgWidth, y: 4890 / originalImgHeight},
         {x: 12477 / originalImgWidth, y: 4220 / originalImgHeight},
         {x: 2626 / originalImgWidth, y: 3950 / originalImgHeight},
-        {x: 1420 / originalImgWidth, y: 572 / originalImgHeight},
-        {x: 1224 / originalImgWidth, y: 392 / originalImgHeight}
+        {x: 13015 / originalImgWidth, y: 6550 / originalImgHeight},
+        {x: 10800 / originalImgWidth, y: 4450 / originalImgHeight}
       ];
       link = "https://data.worldbank.org/indicator/SP.POP.TOTL?most_recent_value_desc=true";
       source = "Source: World Bank. ";
       break;
     case 1:
       pinCoordinates = [
-        {x: 978 / originalImgWidth, y: 323 / originalImgHeight},
-        {x: 270 / originalImgWidth, y: 615 / originalImgHeight},
-        {x: 1637 / originalImgWidth, y: 573 / originalImgHeight},
-        {x: 699 / originalImgWidth, y: 794 / originalImgHeight},
-        {x: 640 / originalImgWidth, y: 460 / originalImgHeight}
+        {x: 8100 / originalImgWidth, y: 3730 / originalImgHeight},
+        {x: 7840 / originalImgWidth, y: 3575 / originalImgHeight},
+        {x: 7220 / originalImgWidth, y: 4007 / originalImgHeight},
+        {x: 15660 / originalImgWidth, y: 6250 / originalImgHeight},
+        {x: -70 / originalImgWidth, y: 6700 / originalImgHeight}
       ];
       link = "https://worldpopulationreview.com/country-rankings/smallest-countries";
       source = "Source: World Population Review. ";
       break;
     case 2:
       pinCoordinates = [
-        {x: 1422 / originalImgWidth, y: 421 / originalImgHeight},
-        {x: 953 / originalImgWidth, y: 315 / originalImgHeight},
-        {x: 1390 / originalImgWidth, y: 528 / originalImgHeight},
-        {x: 1428 / originalImgWidth, y: 418 / originalImgHeight},
-        {x: 903 / originalImgWidth, y: 349 / originalImgHeight}
+        {x: 13190 / originalImgWidth, y: 4855 / originalImgHeight},
+        {x: 7825 / originalImgWidth, y: 3578 / originalImgHeight},
+        {x: 12830 / originalImgWidth, y: 6075 / originalImgHeight},
+        {x: 13230 / originalImgWidth, y: 4850 / originalImgHeight},
+        {x: 7220 / originalImgWidth, y: 4007 / originalImgHeight}
       ];
       link = "https://ourworldindata.org/most-densely-populated-countries";
       source = "Source: Our World in Data. ";
       break;
     case 3:
       pinCoordinates = [
-        {x: 805 / originalImgWidth, y: 198 / originalImgHeight},
-        {x: 699 / originalImgWidth, y: 794 / originalImgHeight},
-        {x: 863 / originalImgWidth, y: 410 / originalImgHeight},
-        {x: 1335 / originalImgWidth, y: 300 / originalImgHeight},
-        {x: 995 / originalImgWidth, y: 650 / originalImgHeight}
+        {x: 6000 / originalImgWidth, y: 2200 / originalImgHeight},
+        {x: 4900 / originalImgWidth, y: 9190 / originalImgHeight},
+        {x: 6700 / originalImgWidth, y: 4800 / originalImgHeight},
+        {x: 12477 / originalImgWidth, y: 3400 / originalImgHeight},
+        {x: 8200 / originalImgWidth, y: 7560 / originalImgHeight}
       ];
       link = "https://www.globalcitizensolutions.com/countries-with-lowest-population-density/";
       source = "Source: Global Citizen Solutions. ";
@@ -85,10 +85,10 @@ function selectCountries() {
     case 4:
       pinCoordinates = [
         {x: 2626 / originalImgWidth, y: 3950 / originalImgHeight},
-        {x: 1360 / originalImgWidth, y: 370 / originalImgHeight},
-        {x: 1505 / originalImgWidth, y: 355 / originalImgHeight},
-        {x: 970 / originalImgWidth, y: 285 / originalImgHeight},
-        {x: 922 / originalImgWidth, y: 272 / originalImgHeight}
+        {x: 12477 / originalImgWidth, y: 4220 / originalImgHeight},
+        {x: 14200 / originalImgWidth, y: 4080 / originalImgHeight},
+        {x: 7900 / originalImgWidth, y: 3205 / originalImgHeight},
+        {x: 7400 / originalImgWidth, y: 3160 / originalImgHeight}
       ];
       link = "https://en.wikipedia.org/wiki/List_of_countries_by_total_wealth#cite_note-databook2023-2";
       source = "Source: Wikipedia. ";
@@ -165,7 +165,7 @@ function selectCountries() {
         {x: 11480 / originalImgWidth, y: 4890 / originalImgHeight},
         {x: 1301 / originalImgWidth, y: 392 / originalImgHeight},
         {x: 1167 / originalImgWidth, y: 408 / originalImgHeight},
-        {x: 1224 / originalImgWidth, y: 392 / originalImgHeight}
+        {x: 10800 / originalImgWidth, y: 4450 / originalImgHeight}
       ];
       link = "https://en.wikipedia.org/wiki/List_of_countries_by_air_pollution";
       source = "Source: Wikipedia (UChicago AQLI 2022). ";
