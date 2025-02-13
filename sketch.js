@@ -95,64 +95,64 @@ function selectCountries() {
       break;
     case 5:
       pinCoordinates = [
-        {x: 952 / originalImgWidth, y: 537 / originalImgHeight},
-        {x: 673 / originalImgWidth, y: 509 / originalImgHeight},
-        {x: 1050 / originalImgWidth, y: 681 / originalImgHeight},
-        {x: 853 / originalImgWidth, y: 472 / originalImgHeight},
-        {x: 1108 / originalImgWidth, y: 478 / originalImgHeight}
+        {x: 7750 / originalImgWidth, y: 6200 / originalImgHeight},
+        {x: 4540 / originalImgWidth, y: 5880 / originalImgHeight},
+        {x: 8925 / originalImgWidth, y: 7805 / originalImgHeight},
+        {x: 6680 / originalImgWidth, y: 5440 / originalImgHeight},
+        {x: 9635 / originalImgWidth, y: 5445 / originalImgHeight}
       ];
       link = "https://en.wikipedia.org/wiki/List_of_countries_by_total_wealth#cite_note-databook2023-2";
       source = "Source: Wikipedia. ";
       break;
     case 6:
       pinCoordinates = [
-        {x: 950 / originalImgWidth, y: 283 / originalImgHeight},
-        {x: 1390 / originalImgWidth, y: 528 / originalImgHeight},
-        {x: 1422 / originalImgWidth, y: 421 / originalImgHeight},
-        {x: 898 / originalImgWidth, y: 268 / originalImgHeight},
-        {x: 1174 / originalImgWidth, y: 402 / originalImgHeight}
+        {x: 12830 / originalImgWidth, y: 6075 / originalImgHeight},
+        {x: 7805 / originalImgWidth, y: 3200 / originalImgHeight},
+        {x: 10045/ originalImgWidth, y: 4670 / originalImgHeight},
+        {x: 7160 / originalImgWidth, y: 3105 / originalImgHeight},
+        {x: 13190 / originalImgWidth, y: 4855 / originalImgHeight}
       ];
       link = "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD?most_recent_value_desc=true";
       source = "Source: World Bank. ";
       break;
     case 7:
       pinCoordinates = [
-        {x: 1053 / originalImgWidth, y: 556 / originalImgHeight},
-        {x: 1053 / originalImgWidth, y: 506 / originalImgHeight},
-        {x: 1016 / originalImgWidth, y: 502 / originalImgHeight},
-        {x: 1125 / originalImgWidth, y: 520 / originalImgHeight},
-        {x: 1023 / originalImgWidth, y: 556 / originalImgHeight}
+        {x: 9000 / originalImgWidth, y: 6385 / originalImgHeight},
+        {x: 9005 / originalImgWidth, y: 5760 / originalImgHeight},
+        {x: 8600/ originalImgWidth, y: 5720 / originalImgHeight},
+        {x: 9890 / originalImgWidth, y: 5885 / originalImgHeight},
+        {x: 8600 / originalImgWidth, y: 6385 / originalImgHeight}
       ];
       link = "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD?most_recent_value_desc=true";
       source = "Source: World Bank. ";
       break;
     case 8:
       pinCoordinates = [
-        {x: 995 / originalImgWidth, y: 288 / originalImgHeight},
-        {x: 986 / originalImgWidth, y: 303 / originalImgHeight},
-        {x: 1032 / originalImgWidth, y: 265 / originalImgHeight},
-        {x: 1040 / originalImgWidth, y: 275 / originalImgHeight},
-        {x: 1040 / originalImgWidth, y: 299 / originalImgHeight}
+        {x: 8450 / originalImgWidth, y: 3250 / originalImgHeight},
+        {x: 8228 / originalImgWidth, y: 3500 / originalImgHeight},
+        {x: 8870 / originalImgWidth, y: 3050 / originalImgHeight},
+        {x: 8895 / originalImgWidth, y: 3225 / originalImgHeight},
+        {x: 8870 / originalImgWidth, y: 3420 / originalImgHeight}
       ];
       link = "https://data.worldbank.org/indicator/SI.POV.GINI?most_recent_value_desc=false";
       source = "Source: World Bank. ";
       break;
     case 9:
       pinCoordinates = [
-        {x: 1023 / originalImgWidth, y: 690 / originalImgHeight},
-        {x: 995 / originalImgWidth, y: 650 / originalImgHeight},
-        {x: 580 / originalImgWidth, y: 520 / originalImgHeight},
-        {x: 1065 / originalImgWidth, y: 668 / originalImgHeight},
-        {x: 1024 / originalImgWidth, y: 650 / originalImgHeight}
+        {x: 8600 / originalImgWidth, y: 8000 / originalImgHeight},
+        {x: 8280 / originalImgWidth, y: 7500 / originalImgHeight},
+        {x: 3585 / originalImgWidth, y: 5900 / originalImgHeight},
+        {x: 9040 / originalImgWidth, y: 7720 / originalImgHeight},
+        {x: 8600 / originalImgWidth, y: 7500 / originalImgHeight}
       ];
       link = "https://data.worldbank.org/indicator/SI.POV.GINI?most_recent_value_desc=false";
       source = "Source: World Bank. ";
       break;
     case 10:
       pinCoordinates = [
-        {x: 1575 / originalImgWidth, y: 4890 / originalImgHeight},
-        {x: 1420 / originalImgWidth, y: 572 / originalImgHeight},
-        {x: 950 / originalImgWidth, y: 500 / originalImgHeight},
+        {x: 14880 / originalImgWidth, y: 6550 / originalImgHeight},
+        {x: 13015 / originalImgWidth, y: 6550 / originalImgHeight},
+        {x: 7800 / originalImgWidth, y: 5680 / originalImgHeight},
         {x: 11480 / originalImgWidth, y: 4890 / originalImgHeight},
         {x: 2626 / originalImgWidth, y: 3950 / originalImgHeight}
       ];
@@ -161,10 +161,10 @@ function selectCountries() {
       break;
     case 11:
       pinCoordinates = [
-        {x: 1322 / originalImgWidth, y: 417 / originalImgHeight},
+        {x: 12000 / originalImgWidth, y: 4800 / originalImgHeight},
         {x: 11480 / originalImgWidth, y: 4890 / originalImgHeight},
-        {x: 1301 / originalImgWidth, y: 392 / originalImgHeight},
-        {x: 1167 / originalImgWidth, y: 408 / originalImgHeight},
+        {x: 11720 / originalImgWidth, y: 4450 / originalImgHeight},
+        {x: 10045 / originalImgWidth, y: 4670 / originalImgHeight},
         {x: 10800 / originalImgWidth, y: 4450 / originalImgHeight}
       ];
       link = "https://en.wikipedia.org/wiki/List_of_countries_by_air_pollution";
