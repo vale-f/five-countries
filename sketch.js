@@ -172,16 +172,15 @@ function selectCountries() {
       break;
     case 12:
       pinCoordinates = [
-        {x: 345 / originalImgWidth, y: 545 / originalImgHeight},
-        {x: 1610 / originalImgWidth, y: 511 / originalImgHeight},
-        {x: 1625 / originalImgWidth, y: 507 / originalImgHeight},
-        {x: 805 / originalImgWidth, y: 198 / originalImgHeight},
-        {x: 335 / originalImgWidth, y: 659 / originalImgHeight}
+        {x: 925 / originalImgWidth, y: 6200 / originalImgHeight},
+        {x: 15425 / originalImgWidth, y: 5820 / originalImgHeight},
+        {x: 15600 / originalImgWidth, y: 5820 / originalImgHeight},
+        {x: 6000 / originalImgWidth, y: 2200 / originalImgHeight},
+        {x: 200 / originalImgWidth, y: 7670 / originalImgHeight}
       ];
       link = "https://en.wikipedia.org/wiki/List_of_countries_by_air_pollution";
       source = "Source: Wikipedia (UChicago AQLI 2022). ";
       break;
-    // Add more cases for other options
     default:
       pinCoordinates = [];
       source = "";
