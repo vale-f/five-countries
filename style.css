@@ -31,6 +31,7 @@ select {
   font-size: 25px;
   padding: 5px;
   font-style: normal;
+  text-align: center
 }
 
 #p5_loading {
