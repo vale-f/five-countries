@@ -220,8 +220,18 @@ function draw() {
     // Check if the mouse is over the pin
     let distance = dist(mouseX, mouseY, pinX, pinY);
     if (distance < 15) {
-      fill(0);
       textSize(18);
+      let boxWidth = textWidth(pin.name) + 15;
+      let boxHeight = 25;
+    
+      // Draw white box with black border
+      fill(255);
+      stroke(0);
+      rect(mouseX + 5, mouseY - 25, boxWidth, boxHeight, 5);
+    
+      // Draw text
+      fill(0);
+      noStroke();
       text(pin.name, mouseX + 10, mouseY - 10);
     }
   }
