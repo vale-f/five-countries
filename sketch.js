@@ -211,7 +211,7 @@ function draw() {
   
   image(img1, x, y, imgWidth, imgHeight);
 
-  // First, render all the pins in the loop
+  // Render all the pins in the loop
   for (let i = 0; i < pinCoordinates.length; i++) {
     let pin = pinCoordinates[i];
     let pinX = x + pin.x * imgWidth;
@@ -221,28 +221,42 @@ function draw() {
     image(img2, pinX, pinY, 14.3, 30);
   }
   
+  let activePins = [];
+
   for (let i = 0; i < pinCoordinates.length; i++) {
     let pin = pinCoordinates[i];
     let pinX = x + pin.x * imgWidth;
     let pinY = y + pin.y * imgHeight;
 
-    // Check if the mouse is over the pin
     let distance = dist(mouseX, mouseY, pinX, pinY);
+
     if (distance < 15) {
-      textSize(18);
-      let boxWidth = textWidth(pin.name) + 15;
-      let boxHeight = 25;
-    
-      // Draw white box with black border
-      fill(255);
-      stroke(0);
-      rect(mouseX + 5, mouseY - 25, boxWidth, boxHeight, 5);
-    
-      // Draw text
-      fill(0);
-      noStroke();
-      text(pin.name, mouseX + 10, mouseY - 10);
+      activePins.push(pin); // Add pin to the active list if it is close to the mouse
     }
+  }
+
+  // Display labels for all active pins
+  for (let i = 0; i < activePins.length; i++) {
+    let pin = activePins[i];
+    let pinX = x + pin.x * imgWidth;
+    let pinY = y + pin.y * imgHeight;
+
+    textSize(18);
+    let boxWidth = textWidth(pin.name) + 15;
+    let boxHeight = 25;
+
+    let labelX = mouseX + 10;
+    let labelY = mouseY - 10 + (i * (boxHeight + 5));  // Stack country names vertically
+    
+    // Box
+    fill(255);
+    stroke(0);
+    rect(labelX, labelY, boxWidth, boxHeight, 5);
+    
+    // Country name
+    fill(0);
+    noStroke();
+    text(pin.name, labelX + 10, labelY + 15);
   }
 
   fill(0);
