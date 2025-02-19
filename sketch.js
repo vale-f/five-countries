@@ -211,11 +211,20 @@ function draw() {
   
   image(img1, x, y, imgWidth, imgHeight);
 
+  // First, render all the pins in the loop
   for (let i = 0; i < pinCoordinates.length; i++) {
     let pin = pinCoordinates[i];
     let pinX = x + pin.x * imgWidth;
     let pinY = y + pin.y * imgHeight;
+  
+    // Draw the pin first
     image(img2, pinX, pinY, 14.3, 30);
+  }
+  
+  for (let i = 0; i < pinCoordinates.length; i++) {
+    let pin = pinCoordinates[i];
+    let pinX = x + pin.x * imgWidth;
+    let pinY = y + pin.y * imgHeight;
 
     // Check if the mouse is over the pin
     let distance = dist(mouseX, mouseY, pinX, pinY);
