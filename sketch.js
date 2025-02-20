@@ -18,6 +18,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  calculateImageDimensions(); // calculate image dimensions to ensure it fits properly on the canvas according to the screen size.
 
   dropdown = select('#country-select');
   dropdown.changed(handleDropdownChange);
@@ -27,6 +28,27 @@ function setup() {
   hyperlink.style("font-size", "14px");
   hyperlink.style("color", "blue");
   hyperlink.class("hyperlink-text"); // Apply the font from the CSS file
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight); 
+  calculateImageDimensions(); // Recalculate image dimensions when the window is resized
+}
+
+function calculateImageDimensions() {
+  let imgAspect = img1.width / img1.height;
+  let canvasAspect = width / height;
+
+  if (imgAspect > canvasAspect) {
+    imgWidth = width;
+    imgHeight = width / imgAspect;
+  } else {
+    imgHeight = height;
+    imgWidth = height * imgAspect;
+  }
+
+  x = (width - imgWidth) / 2;
+  y = (height - imgHeight) / 2;
 }
 
 
