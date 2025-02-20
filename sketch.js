@@ -22,10 +22,11 @@ function setup() {
   dropdown = select('#country-select');
   dropdown.changed(handleDropdownChange);
 
-    // Create hyperlink only once
-    hyperlink = createA("", "", "_blank");
-    hyperlink.style("font-size", "14px");
-    hyperlink.style("color", "blue");
+  // Create hyperlink only once
+  hyperlink = createA("", "", "_blank");
+  hyperlink.style("font-size", "14px");
+  hyperlink.style("color", "blue");
+  hyperlink.class("hyperlink-text"); // Apply the font from the CSS file
 }
 
 
@@ -262,6 +263,7 @@ function draw() {
   fill(0);
   textSize(14);
   textAlign(LEFT, CENTER);
+  textFont('Quicksand'); // Much simpler than using a CSS class
 
   let sourceWidth = textWidth(source);
   let linkWidth = textWidth(link);

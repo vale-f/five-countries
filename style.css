@@ -66,3 +66,7 @@ select {
   font-family: Arial, sans-serif;
   text-align: center;
 }
+
+.hyperlink-text {
+  font-family: 'Quicksand', sans-serif;
+}
