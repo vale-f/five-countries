@@ -236,6 +236,8 @@ function draw() {
     }
   }
 
+  textFont('Quicksand'); // Much simpler than using a CSS
+
   // Display labels for all active pins
   for (let i = 0; i < activePins.length; i++) {
     let pin = activePins[i];
@@ -263,7 +265,6 @@ function draw() {
   fill(0);
   textSize(14);
   textAlign(LEFT, CENTER);
-  textFont('Quicksand'); // Much simpler than using a CSS class
 
   let sourceWidth = textWidth(source);
   let linkWidth = textWidth(link);
